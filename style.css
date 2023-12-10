@@ -1,0 +1,316 @@
+body {
+  margin: 0 auto;
+  font-family: "Pacifico", cursive;
+  font-family: "Roboto Slab", serif;
+  font-family: "Tilt Neon", sans-serif;
+  background-color: #f1efef;
+  display: flex;
+  flex-direction: column;
+}
+/* Header */
+header {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: #191717;
+  color: #f1efef;
+}
+header img {
+  margin-top: 1.2rem;
+  margin-right: 2rem;
+}
+/* Title */
+h1 {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 60%;
+  border-bottom: 2px solid #f1efef;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+h1:hover::after {
+  width: 100%;
+}
+/* Nav Menu */
+.regular-menu {
+  margin: auto 25rem;
+  margin-right: -2rem;
+}
+.regular-menu ul {
+  display: flex;
+  list-style-type: none;
+}
+.regular-menu li a {
+  text-decoration: none;
+}
+.regular-menu li {
+  margin-left: 1rem;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+.regular-menu li::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 60%;
+  border-bottom: 2px solid #f1efef;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+.regular-menu li:hover::after {
+  width: 100%;
+}
+.regular-menu li a:visited {
+  color: #f1efef;
+}
+.regular-menu li a:active {
+  color: #f1efef;
+}
+/* Main */
+main {
+  background-color: #f1efef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80rem;
+  height: 46rem;
+  margin: 0 auto;
+  color: #7d7c7c;
+}
+article {
+  height: 30rem;
+  width: 40rem;
+  border: solid 0.2rem #191717;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+}
+.name {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.name span {
+  text-decoration: overline;
+}
+.front-end {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+article button {
+  background-color: #ccc8aa;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+article button:active {
+  background-color: #191717;
+  color: #ccc8aa;
+}
+/* Footer */
+footer {
+  height: 5.7rem;
+  width: 100%;
+  background-color: #191717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f1efef;
+}
+/* about-me main.about-me */
+.about {
+  background-color: #f1efef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40rem;
+  line-height: 2rem;
+  margin: 0 auto;
+  color: #7d7c7c;
+}
+.about-me {
+  border-radius: 2rem;
+  padding: 2rem;
+  border: solid 0.2rem #191717;
+  text-align: center;
+}
+/* services */
+.services {
+  background-color: #f1efef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80rem;
+  height: 46rem;
+  margin: 0 auto;
+  color: #7d7c7c;
+  gap: 3%;
+  text-align: center;
+}
+
+section {
+  background-color: #f1efef;
+  border: solid 0.2rem #191717;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+section h1::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 60%;
+  border-bottom: 2px solid #ccc8aa;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+section h1:hover::after {
+  width: 100%;
+}
+.burger-menu-container {
+  display: none;
+}
+/* For small screens */
+@media (max-width: 768px) {
+  body {
+    margin: 0 auto;
+    font-family: "Pacifico", cursive;
+    font-family: "Roboto Slab", serif;
+    font-family: "Tilt Neon", sans-serif;
+    background-color: #f1efef;
+    display: flex;
+  }
+  .regular-menu {
+    display: none; /* Hide regular menu for smaller screens */
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1 {
+    margin-right: 3rem;
+  }
+  .burger-menu-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .burger-icon {
+    cursor: pointer;
+    font-size: 1.5rem;
+    /* Add your burger icon styles here */
+  }
+
+  /* Show nav when burger icon is clicked */
+  .burger-icon.active + nav {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #f1efef; /* Background color for the burger menu */
+    padding: 1rem; /* Adjust padding as needed */
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    margin-bottom: 1rem;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #000; /* Color of the links in the burger menu */
+    /* Add other link styles as needed */
+  }
+  main {
+    width: 90%;
+    max-width: 100%;
+    margin: 0;
+    padding: 2rem 15px;
+    background-color: #f1efef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #7d7c7c;
+    padding-bottom: 60px;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    height: 70rem;
+    padding: 0 15px;
+    margin-top: 2rem;
+  }
+
+  .services section {
+    text-align: center;
+    margin-bottom: 2rem;
+    max-width: 90%;
+  }
+  article {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    height: 30rem;
+    width: 50%;
+    border: solid 0.2rem #191717;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+  }
+  .about {
+    width: 90%;
+    max-width: 100%;
+    margin: 0;
+    padding: 2rem 15px;
+    background-color: #f1efef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #7d7c7c;
+  }
+  .about-me {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    height: 38rem;
+    width: 50%;
+    border: solid 0.2rem #191717;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+  }
+  .name {
+    font-size: 2rem;
+  }
+}
