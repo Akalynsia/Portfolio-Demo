@@ -1,3 +1,4 @@
+/* Normal Screens */
 @media (max-width: 1200px) {
   body {
     margin: 0 auto;
@@ -88,6 +89,7 @@
     margin: 0 auto;
     color: #7d7c7c;
   }
+  /* Index.html article */
   article {
     height: 30rem;
     width: 40rem;
@@ -100,6 +102,7 @@
     margin-top: 7.8em;
     margin-bottom: 7.8em;
   }
+  /* Index.html name */
   .name {
     text-align: center;
     font-size: 3rem;
@@ -108,6 +111,7 @@
   .name span {
     text-decoration: overline;
   }
+  /* Index.html description */
   .front-end {
     text-align: center;
     font-size: 1.5rem;
@@ -121,6 +125,37 @@
   article button:active {
     background-color: #191717;
     color: #ccc8aa;
+  }
+  /* Contact-info */
+  .contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+  .contact a {
+    color: #7d7c7c;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  .contact p {
+    font-size: 1.5rem;
+  }
+  .contact a:visited {
+    color: #7d7c7c;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  .contact a:active {
+    color: #7d7c7c;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  .contact a:hover {
+    color: #7d7c7c;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-decoration: underline;
   }
   /* Footer */
   footer {
@@ -166,7 +201,7 @@
     gap: 3%;
     text-align: center;
   }
-
+  /* Services-Sections */
   section {
     background-color: #f1efef;
     border: solid 0.2rem #191717;
@@ -187,10 +222,16 @@
   section h1:hover::after {
     width: 100%;
   }
+  /* Burger Menu Container */
   .burger-menu-container {
     display: none;
   }
+  .contact {
+    display: flex;
+    text-align: center;
+  }
 }
+/* For Bigger Screens */
 @media (min-width: 1200px) {
   body {
     margin: 0 auto;
@@ -315,6 +356,36 @@
     background-color: #191717;
     color: #ccc8aa;
   }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+  .contact a {
+    color: #7d7c7c;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  .contact p {
+    font-size: 1.5rem;
+  }
+  .contact a:visited {
+    color: #7d7c7c;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  .contact a:active {
+    color: #7d7c7c;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  .contact a:hover {
+    color: #7d7c7c;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-decoration: underline;
+  }
   /* Footer */
   footer {
     height: 5.7rem;
@@ -336,7 +407,7 @@
     margin: 0 auto;
     color: #7d7c7c;
     margin-top: 7.8em;
-    margin-bottom: 7.8em;
+    margin-bottom: 7.75em;
   }
   .about-me {
     border-radius: 2rem;
@@ -359,7 +430,6 @@
     gap: 3%;
     text-align: center;
   }
-
   section {
     background-color: #f1efef;
     border: solid 0.2rem #191717;
@@ -457,7 +527,6 @@
     color: #7d7c7c;
     padding-bottom: 60px;
   }
-
   .services {
     display: flex;
     flex-direction: column;
@@ -467,7 +536,6 @@
     padding: 0 15px;
     margin-top: 2rem;
   }
-
   .services section {
     text-align: center;
     margin-bottom: 2rem;
@@ -502,7 +570,7 @@
     width: 100%;
     max-width: 100%;
     border-radius: 0;
-    height: 38rem;
+    height: 37.7rem;
     width: 50%;
     border: solid 0.2rem #191717;
     display: flex;
@@ -513,5 +581,39 @@
   }
   .name {
     font-size: 2rem;
+  }
+  .contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+  .contact h1 {
+    margin-left: 3rem;
+  }
+  .contact a {
+    color: #7d7c7c;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  .contact p {
+    font-size: 1.5rem;
+  }
+  .contact a:visited {
+    color: #7d7c7c;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  .contact a:active {
+    color: #7d7c7c;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  .contact a:hover {
+    color: #7d7c7c;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-decoration: underline;
   }
 }
