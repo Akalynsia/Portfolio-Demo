@@ -83,7 +83,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 80rem;
-  height: 46rem;
+  height: auto;
   margin: 0 auto;
   color: #7d7c7c;
 }
@@ -96,6 +96,8 @@ article {
   align-items: center;
   justify-content: center;
   border-radius: 2rem;
+  margin-top: 7.8em;
+  margin-bottom: 7.8em;
 }
 .name {
   text-align: center;
@@ -139,12 +141,16 @@ footer {
   line-height: 2rem;
   margin: 0 auto;
   color: #7d7c7c;
+  margin-top: 7.8em;
+  margin-bottom: 7.8em;
 }
 .about-me {
   border-radius: 2rem;
   padding: 2rem;
   border: solid 0.2rem #191717;
   text-align: center;
+  margin-top: 3.3em;
+  margin-bottom: 3.3em;
 }
 /* services */
 .services {
